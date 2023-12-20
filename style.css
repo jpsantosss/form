@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Mukta';
+}
+:root{
+    --cor01: #FF6B35;
+    --cor02: #353535;
+}
+body{
+    background-color: rgb(228, 228, 228);
+}
+header#cabecalho{
+    position: relative;
+    height: 150px;
+    background-color: var(--cor02);
+    color: white;
+}
+h1.titulo{
+    position: absolute;
+    top: 25%;
+    transform: translate(0, 50%);
+    background-color: #FF6B35;
+    width: 400px;
+    text-align: center;
+    font-size: 2em;
+}
+hr{
+    height: 4px;
+    background-color: var(--cor01);
+    margin-bottom: 10px;
+}
+main#conteudo-principal{
+    width: 900px;
+    margin: auto;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: white;
+}
+legend{
+    font-family: 'Bebas Neue';
+    color: rgb(180, 180, 180);
+}
+fieldset{
+    border: none;
+}
+input.input-nome{
+    size: 50px;
+    margin-right: 30px;
+}
