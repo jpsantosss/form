@@ -49,16 +49,13 @@ fieldset{
     border: none;
     padding: 0px 20px;
 }
-input.input-nome{
-    margin-right: 30px;
+.grupo-inputs{
+    display: flex;
+    justify-content: space-between;
 }
 .inputs-nome{
-    border: 1px solid black;
-    display: flex;
-    width: 395px;
-}
-.desc-nomes{
     display: inline-block;
-    width: 419px;
-    border: 1px solid black;
+}
+.inputs-sobrenome{
+    display: inline-block;
 }
