@@ -1,0 +1,1 @@
+datePickerId.max = new Date().toISOString().split("T")[0]; //Script para data de nascimento ter o valor máximo ser o diaa atual

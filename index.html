@@ -17,19 +17,56 @@
         <form autocomplete="off" id="formulario" method="post">
             <fieldset class="formulario-classe">
                 <legend>Dados pessoais</legend>
-                    <h2 class="subtitulo">NOME</h2>
-                        <div class="grupo-inputs">
-                            <div class="inputs-nome">
+                    <h2 class="subtitulo">Nome</h2>
+                        <div class="grupo-input">
+                            <div class="input-item">
                                 <input type="text" name="nome" id="nome" class="input-nome" size="60">
-                                <p>Nome</p>
+                                <p class="indice">Nome</p>
                             </div>
-                            <div class="inputs-sobrenome">
-                                <input type="text" name="nome" id="nome" class="input-nome" size="60">
-                                <p>Sobrenome</p>
+                            <div class="input-item">
+                                <input type="text" name="sobrenome" id="sobrenome" class="input-nome" size="60">
+                                <p class="indice">Sobrenome</p>
+                            </div>
+                        </div>
+                    <div class="grupo-input-b">
+                        <div class="input-item">
+                            <h2 class="subtitulo">Data de nascimento</h2>
+                                <input type="date" name="data-nasc" id="datePickerId" min="1920-01-01" max="">
+                        </div>
+                        <div class="input-item">
+                            <h2 class="subtitulo">Gênero</h2>
+                                <input type="radio" name="genero" id="genero-masc" value="Masculino" checked>
+                                <label for="genero-masc">Masculino</label>
+                                <input type="radio" name="genero" id="genero-fem" value="Feminino">
+                                <label for="genero-fem">Feminino</label>
+                        </div>
+                    </div>
+                    <h2 class="subtitulo">Endereço</h2>
+                        <div class="grupo-input">
+                            <div class="input-item">
+                                <input type="text" name="endereco-rua" id="endereco-rua" size="100">
+                                <p class="indice">Rua</p>
+                            </div>
+                            <div class="input-item">
+                                <input type="number" name="endereco-num" id="endereco-num">
+                                <p class="indice">Número</p>
+                            </div>
+                        </div>
+                        <div class="grupo-input">
+                            <div class="input-item">
+                                <input type="text" name="endereco-bairro" id="endereco-bairro" size="35">
+                                <p class="indice">Bairro</p>
+                            </div>
+                            <div class="input-item">
+                                <input type="text" name="endereco-cidade" id="endereco-cidade" size="35">
+                                <p class="indice">Cidade</p>
+                            </div>
+                            <div class="input-item">
+                                <input type="text" name="endereco-estado" id="endereco-estado" size="40">
+                                <p class="indice">Estado</p>
                             </div>
                         </div>
             </fieldset>
-
         </form>
     </main>
 
@@ -41,5 +78,6 @@
             <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
         </p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

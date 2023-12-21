@@ -5,7 +5,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Mukta';
+    font-family: 'Mukta', sans-serif;
 }
 :root{
     --cor01: #FF6B35;
@@ -49,13 +49,21 @@ fieldset{
     border: none;
     padding: 0px 20px;
 }
-.grupo-inputs{
+.grupo-input{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
-.inputs-nome{
-    display: inline-block;
+.grupo-input-b{
+    display: flex;
+    gap: 150px;
+    margin-bottom: 20px;
 }
-.inputs-sobrenome{
-    display: inline-block;
+.input-item > label{
+    margin-right: 50px;
+}
+.indice{
+    color: rgb(180, 180, 180);
+    font-weight: bolder;
+    text-transform: uppercase;
 }
