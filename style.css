@@ -49,7 +49,11 @@ legend{
 }
 fieldset{
     border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.13);
     padding: 0px 20px;
+}
+input{
+    height: 1.5em;
 }
 .grupo-input{
     display: flex;
@@ -59,6 +63,12 @@ fieldset{
     display: flex;
     gap: 150px;
     margin-bottom: 20px;
+}
+.grupo-input-c{
+    margin-top: -25px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
 .input-item > label{
     margin-right: 50px;
