@@ -13,6 +13,7 @@
 }
 body{
     background-color: rgb(228, 228, 228);
+    min-height: 100vh;
 }
 header#cabecalho{
     position: relative;
@@ -29,7 +30,7 @@ h1.titulo{
     text-align: center;
     font-size: 2em;
 }
-hr{
+hr.cabecalho{
     height: 4px;
     background-color: var(--cor01);
     margin-bottom: 10px;
@@ -66,6 +67,7 @@ input{
 }
 .grupo-input-c{
     margin-top: -25px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     gap: 25px;
@@ -83,4 +85,15 @@ input{
 .padrao-num{
     display: inline-block;
     color: rgb(180, 180, 180);
+}
+footer#rodape{
+    background-color: #353535;
+    text-align: center;
+    color: white;
+}
+hr.rodape{
+    height: 4px;
+    background-color: var(--cor01);
+    margin-top: 20px;
+    border: none;
 }
