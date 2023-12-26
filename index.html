@@ -21,11 +21,15 @@
                         <div class="grupo-input">
                             <div class="input-item">
                                 <input type="text" name="nome" id="nome" class="input-nome" size="60">
-                                <p class="indice">Nome</p>
+                                <label for="nome">
+                                    <p class="indice">Primeiro nome</p>
+                                </label>
                             </div>
                             <div class="input-item">
                                 <input type="text" name="sobrenome" id="sobrenome" class="input-nome" size="60">
-                                <p class="indice">Sobrenome</p>
+                                <label for="sobrenome">
+                                    <p class="indice">Sobrenome</p>
+                                </label>
                             </div>
                         </div>
                     <div class="grupo-input-b">
@@ -45,27 +49,56 @@
                         <div class="grupo-input">
                             <div class="input-item">
                                 <input type="text" name="endereco-rua" id="endereco-rua" size="100">
-                                <p class="indice">Rua</p>
+                                <label for="endereco-rua">
+                                    <p class="indice">Rua</p>
+                                </label>
                             </div>
                             <div class="input-item">
                                 <input type="number" name="endereco-num" id="endereco-num">
-                                <p class="indice">Número</p>
+                                <label for="endereco-num">
+                                    <p class="indice">Número</p>
+                                </label>
                             </div>
                         </div>
                         <div class="grupo-input">
                             <div class="input-item">
                                 <input type="text" name="endereco-bairro" id="endereco-bairro" size="35">
-                                <p class="indice">Bairro</p>
+                                <label for="endereco-bairro">
+                                    <p class="indice">Bairro</p>
+                                </label>
                             </div>
                             <div class="input-item">
                                 <input type="text" name="endereco-cidade" id="endereco-cidade" size="35">
-                                <p class="indice">Cidade</p>
+                                <label for="endereco-cidade">
+                                    <p class="indice">Cidade</p>
+                                </label>
                             </div>
                             <div class="input-item">
                                 <input type="text" name="endereco-estado" id="endereco-estado" size="40">
-                                <p class="indice">Estado</p>
+                                <label for="endereco-estado">
+                                    <p class="indice">Estado</p>
+                                </label>
                             </div>
                         </div>
+            </fieldset>
+            <fieldset class="formulario-classe">
+                <legend>Contato</legend>
+                    <div class="grupo-input-b">
+                        <div class="input-item">
+                            <h2 class="subtitulo">Celular</h2>
+                            <input type="tel" name="contato-cel" id="contato-cel"" size="25"> <p class="padrao-num">(21) 91234-1234</p>
+                            <label for="contato-cel">
+                                <p class="indice">WhatsApp</p>
+                            </label>
+                        </div>
+                        <div class="input-item">
+                            <h2 class="subtitulo">Telefone</h2>
+                            <input type="tel" name="contato-tel" id="contato-tel" size="25">
+                            <label for="contato-tel">
+                                <p class="indice">Fixo</p>
+                            </label>
+                        </div>
+                    </div>
             </fieldset>
         </form>
     </main>

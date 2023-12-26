@@ -33,6 +33,7 @@ hr{
     height: 4px;
     background-color: var(--cor01);
     margin-bottom: 10px;
+    border: none;
 }
 main#conteudo-principal{
     width: 900px;
@@ -42,8 +43,9 @@ main#conteudo-principal{
     background-color: white;
 }
 legend{
+    font-size: 23px;
     font-family: 'Bebas Neue';
-    color: rgb(180, 180, 180);
+    color: rgb(143, 143, 143);
 }
 fieldset{
     border: none;
@@ -52,7 +54,6 @@ fieldset{
 .grupo-input{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
 }
 .grupo-input-b{
     display: flex;
@@ -62,8 +63,14 @@ fieldset{
 .input-item > label{
     margin-right: 50px;
 }
+.input-item-b{
+    display: inline-block;
+}
 .indice{
     color: rgb(180, 180, 180);
     font-weight: bolder;
-    text-transform: uppercase;
+}
+.padrao-num{
+    display: inline-block;
+    color: rgb(180, 180, 180);
 }
