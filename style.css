@@ -56,7 +56,13 @@ legend{
     padding: 0px 20px;
 }
 input{
+    border-radius: 10px;
+    border: solid 1px rgba(0, 0, 0, 0.63);
     height: 1.5em;
+    padding: 3px;
+}
+input:focus{
+    background-color: #FF6B35;
 }
 .grupo-input{
     display: flex;

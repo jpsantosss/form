@@ -49,13 +49,13 @@
                     <h2 class="subtitulo">Endereço</h2>
                         <div class="grupo-input">
                             <div class="input-item">
-                                <input type="text" name="endereco-rua" id="endereco-rua" size="100">
+                                <input type="text" name="endereco-rua" id="endereco-rua" size="100" required>
                                 <label for="endereco-rua">
                                     <p class="indice">Rua</p>
                                 </label>
                             </div>
                             <div class="input-item">
-                                <input type="number" name="endereco-num" id="endereco-num">
+                                <input type="number" name="endereco-num" id="endereco-num" required>
                                 <label for="endereco-num">
                                     <p class="indice">Número</p>
                                 </label>
@@ -63,19 +63,19 @@
                         </div>
                         <div class="grupo-input">
                             <div class="input-item">
-                                <input type="text" name="endereco-bairro" id="endereco-bairro" size="35">
+                                <input type="text" name="endereco-bairro" id="endereco-bairro" size="35" required>
                                 <label for="endereco-bairro">
                                     <p class="indice">Bairro</p>
                                 </label>
                             </div>
                             <div class="input-item">
-                                <input type="text" name="endereco-cidade" id="endereco-cidade" size="35">
+                                <input type="text" name="endereco-cidade" id="endereco-cidade" size="35" required>
                                 <label for="endereco-cidade">
                                     <p class="indice">Cidade</p>
                                 </label>
                             </div>
                             <div class="input-item">
-                                <select name="endereco-estado" id="endereco-estado" style="width: 100px;">
+                                <select name="endereco-estado" id="endereco-estado" style="width: 200px;">
                                     <optgroup label="Região Sudeste">
                                         <option value="ES">Espírito Santo</option>
                                         <option value="MG">Minas Gerais</option>
@@ -125,7 +125,7 @@
                     <div class="grupo-input-b">
                         <div class="input-item">
                             <h2 class="subtitulo">Celular</h2>
-                            <input type="tel" name="contato-cel" id="contato-cel"" size="25"> <p class="padrao-num">(DDD) 91234-1234</p>
+                            <input type="tel" name="contato-cel" id="contato-cel"" size="25" required> <p class="padrao-num">(DDD) 91234-1234</p>
                             <label for="contato-cel">
                                 <p class="indice">WhatsApp</p>
                             </label>
@@ -140,7 +140,7 @@
                     </div>
                     <div class="grupo-input-c">
                         <h2>Email</h2>
-                        <input type="email" name="contato-email" id="contato-email" size="100">
+                        <input type="email" name="contato-email" id="contato-email" size="100" required>
                     </div>
             </fieldset>
             <fieldset class="formulario-classe">
