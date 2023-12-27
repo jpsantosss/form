@@ -36,6 +36,7 @@ hr.cabecalho{
     height: 4px;
     background-color: var(--cor01);
     border: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.384);
 }
 main#conteudo-principal{
     width: 900px;
@@ -44,6 +45,7 @@ main#conteudo-principal{
     padding: 8px;
     border-radius: 10px;
     background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
 }
 legend{
     font-size: 23px;
@@ -62,7 +64,9 @@ input{
     padding: 3px;
 }
 input:focus{
-    background-color: #FF6B35;
+    border: 1px solid rgb(145, 145, 145);
+    outline: none;
+    background-color: #d6d6d6;
 }
 .grupo-input{
     display: flex;
@@ -101,7 +105,37 @@ input:focus{
     display: inline-block;
     color: rgb(180, 180, 180);
 }
+.botoes{
+    gap: 15px;
+    display: flex;
+    align-items: center;
+}
+button#submit{
+    margin-top: 70px;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--cor01);
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5em;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.274);
+}
+button#reset{
+    margin-top: 70px;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--cor02);
+    color: rgb(247, 247, 247);
+    font-weight: bolder;
+    font-size: 1em;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.274);
+}
 hr.rodape{
+    margin-top: 50px;
     height: 4px;
     background-color: var(--cor01);
     border: none;
