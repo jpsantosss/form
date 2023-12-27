@@ -19,13 +19,13 @@
                     <h2 class="subtitulo">Nome</h2>
                         <div class="grupo-input">
                             <div class="input-item">
-                                <input type="text" name="nome" id="nome" class="input-nome" size="60">
+                                <input type="text" name="nome" id="nome" class="input-nome" size="60" required>
                                 <label for="nome">
                                     <p class="indice">Primeiro nome</p>
                                 </label>
                             </div>
                             <div class="input-item">
-                                <input type="text" name="sobrenome" id="sobrenome" class="input-nome" size="60">
+                                <input type="text" name="sobrenome" id="sobrenome" class="input-nome" size="60" required>
                                 <label for="sobrenome">
                                     <p class="indice">Sobrenome</p>
                                 </label>
@@ -34,14 +34,16 @@
                     <div class="grupo-input-b">
                         <div class="input-item">
                             <h2 class="subtitulo">Data de nascimento</h2>
-                                <input type="date" name="data-nasc" id="datePickerId" min="1920-01-01" max="">
+                                <input type="date" name="data-nasc" id="datePickerId" min="1920-01-01" required>
                         </div>
                         <div class="input-item">
                             <h2 class="subtitulo">Gênero</h2>
-                                <input type="radio" name="genero" id="genero-masc" value="Masculino" checked>
-                                <label for="genero-masc">Masculino</label>
-                                <input type="radio" name="genero" id="genero-fem" value="Feminino">
-                                <label for="genero-fem">Feminino</label>
+                                <div class="input-item-genero">
+                                    <input type="radio" name="genero" id="genero-masc" value="Masculino" checked>
+                                    <label for="genero-masc">Masculino</label>
+                                    <input type="radio" name="genero" id="genero-fem" value="Feminino">
+                                    <label for="genero-fem">Feminino</label>
+                                </div>
                         </div>
                     </div>
                     <h2 class="subtitulo">Endereço</h2>
@@ -73,9 +75,47 @@
                                 </label>
                             </div>
                             <div class="input-item">
-                                <input type="text" name="endereco-estado" id="endereco-estado" size="40">
+                                <select name="endereco-estado" id="endereco-estado" style="width: 100px;">
+                                    <optgroup label="Região Sudeste">
+                                        <option value="ES">Espírito Santo</option>
+                                        <option value="MG">Minas Gerais</option>
+                                        <option value="RJ" selected>Rio de Janeiro</option>
+                                        <option value="SP">São Paulo</option>
+                                    </optgroup>
+                                    <optgroup label="Região Sul">
+                                        <option value="PR">Paraná</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                        <option value="SC">Santa Catarina</option>
+                                    </optgroup>
+                                    <optgroup label="Região Nordeste">
+                                        <option value="AL">Alagoas</option>
+                                        <option value="BA">Bahia</option>
+                                        <option value="CE">Ceará</option>
+                                        <option value="MA">Maranhão</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PI">Piauí</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                        <option value="SE">Sergipe</option>
+                                    </optgroup>
+                                    <optgroup label="Região Centro-Oeste">
+                                        <option value="DF">Distrito Federal</option>
+                                        <option value="GO">Goiás</option>
+                                        <option value="MT">Mato Grosso</option>
+                                        <option value="MS">Mato Grosso do Sul</option>
+                                    </optgroup>
+                                    <optgroup label="Região Norte">
+                                        <option value="AC">Acre</option>
+                                        <option value="AP">Amapá</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="PA">Pará</option>
+                                        <option value="RO">Rondônia</option>
+                                        <option value="RR">Roraima</option>
+                                        <option value="TO">Tocantins</option>
+                                    </optgroup>
+                                </select>
                                 <label for="endereco-estado">
-                                    <p class="indice">Estado</p>
+                                    <p class="indice">UF</p>
                                 </label>
                             </div>
                         </div>
@@ -85,7 +125,7 @@
                     <div class="grupo-input-b">
                         <div class="input-item">
                             <h2 class="subtitulo">Celular</h2>
-                            <input type="tel" name="contato-cel" id="contato-cel"" size="25"> <p class="padrao-num">(21) 91234-1234</p>
+                            <input type="tel" name="contato-cel" id="contato-cel"" size="25"> <p class="padrao-num">(DDD) 91234-1234</p>
                             <label for="contato-cel">
                                 <p class="indice">WhatsApp</p>
                             </label>
@@ -103,7 +143,7 @@
                         <input type="email" name="contato-email" id="contato-email" size="100">
                     </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="formulario-classe">
                 <legend>Redes Sociais</legend>
                     <div class="grupo-input" style="padding-top: 15px;">
                         <div class="input-item">

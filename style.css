@@ -50,7 +50,7 @@ legend{
     font-family: 'Bebas Neue';
     color: rgb(143, 143, 143);
 }
-fieldset{
+.formulario-classe{
     border: none;
     border-top: 1px solid rgba(0, 0, 0, 0.13);
     padding: 0px 20px;
@@ -73,6 +73,13 @@ input{
     display: flex;
     align-items: center;
     gap: 25px;
+}
+.input-item-genero{
+    display: flex;
+    align-items: center;
+}
+.input-item-genero > label{
+    margin-right: 50px;
 }
 .input-item > label{
     margin-right: 50px;
