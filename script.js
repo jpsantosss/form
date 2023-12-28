@@ -8,5 +8,8 @@ function enviar(){
     var anoAtual = anoAtual.getFullYear()//A variável recebe apenas o ano da data representada pelo objeto 'Date'.
 
     var idade = anoAtual - anoNasc//Cria uma variável a partir do resultado de 'anoAtual' - 'anoNasc'.
-    teste.innerHTML = idade
+    var resultado = document.getElementById('resultado')
+    if(idade < 18){
+        resultado.innerHTML = 'O usuário registrado é <span style="text-decoration: underline;">menor de idade</span>, portanto, não pode continuar!'
+    }
 }

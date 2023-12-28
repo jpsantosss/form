@@ -134,6 +134,14 @@ input:focus{
     font-size: 1em;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.274);
 }
+p#resultado{
+    margin-top: 15px;
+    text-align: center;
+    color: red;
+    font-weight: bolder;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
 hr.rodape{
     margin-top: 50px;
     height: 4px;
