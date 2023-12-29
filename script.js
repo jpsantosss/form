@@ -1,4 +1,22 @@
 datePickerId.max = new Date().toISOString().split("T")[0]//Script para data de nascimento ter o valor máximo ser o dia atual.
+
+function verificarCampos() {
+    var form = document.getElementById('formulario')//Cria uma variável com o elemento de id 'formulario'.
+    var camposObrigatorios = form.querySelectorAll('[required]')//Cria umva variável onde o 'querySelectorAll' percorre todos os elementos dentro do HTML que tem o atributo 'required'.
+
+    var camposPreenchidos = true//Cria uma variável booleana com valor true.
+    camposObrigatorios.forEach(function(campo) {//Percorre cada elemento da lista de campos obrigatórios.
+        if (!campo.value || !campo.checkValidity()) {//Loop onde verifica se o campo atual está vazio (!campo.value) ou se não passa na validação usando (checkValidity()) isso pode pode acontecer se o usuário inserir um valor inválido, como uma data inválida ou um email mal formatado.
+            camposPreenchidos = false//Se algum dos campos obrigatórios for preenchido ou não for válido, a variável 'camposPreenchidos' recebe 'false'.
+            return;//Interrompe o loop, pois se um campo não estiver preenchido, não há necessidade de verificar os outros campos.
+        }
+    })
+    if (camposPreenchidos) {//Se os campos obrigatórios estiverem preenchidos da maneira correta irá chamar a função 'enviar()'.
+        enviar()
+    } else {//Caso algum campo obrigatório estiver preenchido incorretamente exibe um alerta para o usuário.
+        alert('Por favor, preencha todos os campos obrigatórios corretamente.')
+    }
+}
 function enviar(){
     var dataInput = document.getElementById('datePickerId').value//Cria uma variável onde recebe o valor do elemento com id 'datePickerId'.
     var data = new Date(dataInput)//Cria uma variável onde o construtor Date recebe a String 'dataInput' que receber um valor inserido no elemento <input> do tipo "date", sendo assim, o valor associado será uma string no formato "YYYY-MM-DD". O contrutor Date consegue interpretar essa string e cria um objeto 'Date' correspondente. (Com argumento do tipo String)
