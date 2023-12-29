@@ -21,23 +21,23 @@
                             <div class="input-item">
                                 <input type="text" name="nome" id="nome" class="input-nome" size="60" required>
                                 <label for="nome">
-                                    <p class="indice">Primeiro nome</p>
+                                    <p class="indice">Primeiro nome<span style="color: rgb(255, 127, 127);">*</span></p>
                                 </label>
                             </div>
                             <div class="input-item">
                                 <input type="text" name="sobrenome" id="sobrenome" class="input-nome" size="60" required>
                                 <label for="sobrenome">
-                                    <p class="indice">Sobrenome</p>
+                                    <p class="indice">Sobrenome<span style="color: rgb(255, 127, 127);">*</span></p>
                                 </label>
                             </div>
                         </div>
                     <div class="grupo-input-b">
                         <div class="input-item">
-                            <h2 class="subtitulo">Data de nascimento</h2>
+                            <h2 class="subtitulo">Data de nascimento<span style="color: rgb(255, 127, 127);">*</span></h2>
                                 <input type="date" name="data-nasc" id="datePickerId" min="1920-01-01" required>
                         </div>
                         <div class="input-item">
-                            <h2 class="subtitulo">Gênero</h2>
+                            <h2 class="subtitulo">Gênero<span style="color: rgb(255, 127, 127);">*</span></h2>
                                 <div class="input-item-genero">
                                     <input type="radio" name="genero" id="genero-masc" value="Masculino" checked>
                                     <label for="genero-masc">Masculino</label>
@@ -51,13 +51,13 @@
                             <div class="input-item">
                                 <input type="text" name="endereco-rua" id="endereco-rua" size="100" required>
                                 <label for="endereco-rua">
-                                    <p class="indice">Rua</p>
+                                    <p class="indice">Rua<span style="color: rgb(255, 127, 127);">*</span></p>
                                 </label>
                             </div>
                             <div class="input-item">
                                 <input type="number" name="endereco-num" id="endereco-num" required>
                                 <label for="endereco-num">
-                                    <p class="indice">Número</p>
+                                    <p class="indice">Número<span style="color: rgb(255, 127, 127);">*</span></p>
                                 </label>
                             </div>
                         </div>
@@ -65,13 +65,13 @@
                             <div class="input-item">
                                 <input type="text" name="endereco-bairro" id="endereco-bairro" size="35" required>
                                 <label for="endereco-bairro">
-                                    <p class="indice">Bairro</p>
+                                    <p class="indice">Bairro<span style="color: rgb(255, 127, 127);">*</span></p>
                                 </label>
                             </div>
                             <div class="input-item">
                                 <input type="text" name="endereco-cidade" id="endereco-cidade" size="35" required>
                                 <label for="endereco-cidade">
-                                    <p class="indice">Cidade</p>
+                                    <p class="indice">Cidade<span style="color: rgb(255, 127, 127);">*</span></p>
                                 </label>
                             </div>
                             <div class="input-item">
@@ -115,31 +115,27 @@
                                     </optgroup>
                                 </select>
                                 <label for="endereco-estado">
-                                    <p class="indice">UF</p>
+                                    <p class="indice">UF<span style="color: rgb(255, 127, 127);">*</span></p>
                                 </label>
                             </div>
                         </div>
             </fieldset>
             <fieldset class="formulario-classe">
                 <legend>Contato</legend>
+                <h2 class="subtitulo">Celular</h2>
                     <div class="grupo-input-b">
                         <div class="input-item">
-                            <h2 class="subtitulo">Celular</h2>
-                            <input type="tel" name="contato-cel" id="contato-cel"" size="25" required> <p class="padrao-num">(DDD) 91234-1234</p>
-                            <label for="contato-cel">
-                                <p class="indice">WhatsApp</p>
-                            </label>
+                            <input type="tel" name="contato-cel" id="contato-cel"" size="25" required> <p class="padrao-num">(DDD) 91234-1234<span style="color: rgb(255, 127, 127);">*</span></p>
                         </div>
                         <div class="input-item">
-                            <h2 class="subtitulo">Telefone</h2>
                             <input type="tel" name="contato-tel" id="contato-tel" size="25">
                             <label for="contato-tel">
-                                <p class="indice">Fixo</p>
+                                <p class="indice">WhatsApp</p>
                             </label>
                         </div>
                     </div>
                     <div class="grupo-input-c">
-                        <h2>Email</h2>
+                        <h2>Email<span style="color: rgb(255, 127, 127);">*</span></h2>
                         <input type="email" name="contato-email" id="contato-email" size="100" required>
                     </div>
             </fieldset>
