@@ -28,6 +28,8 @@ function enviar(){
     var idade = anoAtual - anoNasc//Cria uma variável a partir do resultado de 'anoAtual' - 'anoNasc'.
     var resultado = document.getElementById('resultado')
     if(idade < 18){
-        resultado.innerHTML = 'O usuário registrado é <span style="text-decoration: underline;">menor de idade</span>, portanto, não pode continuar!'
+        resultado.innerHTML = 'O usuário registrado é <span style="text-decoration: underline; color: red;">menor de idade</span>, portanto, não pode continuar!'
+    } else {
+        resultado.innerHTML = '<span style="color: green;">Seu formulário foi enviado com sucesso!</span>'
     }
 }
