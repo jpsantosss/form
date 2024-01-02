@@ -26,10 +26,27 @@ function enviar(){
     var anoAtual = anoAtual.getFullYear()//A variável recebe apenas o ano da data representada pelo objeto 'Date'.
 
     var idade = anoAtual - anoNasc//Cria uma variável a partir do resultado de 'anoAtual' - 'anoNasc'.
+    var nomePessoa = document.getElementById('nome').value//Cria uma variável com o nome da pessoa.
+
+    var horaAtual = new Date()//Cria uma varaiável com a Data e Hora atuais.
+    var horaAtual = horaAtual.getHours()//A variável recebe apenas a hora atual.
+
     var resultado = document.getElementById('resultado')
     if(idade < 18){
-        resultado.innerHTML = 'O usuário registrado é <span style="text-decoration: underline; color: red;">menor de idade</span>, portanto, não pode continuar!'
+        resultado.innerHTML = `O usuário registrado é <span style="text-decoration: underline; color: red;">menor de idade</span>, portanto, não pode continuar!`
     } else {
-        resultado.innerHTML = '<span style="color: green;">Seu formulário foi enviado com sucesso!</span>'
+        if(horaAtual <= 6){
+            horaAtual = 'Boa madrugada!'
+            resultado.innerHTML = `<span style="color: green;">${horaAtual} ${nomePessoa}, seu formulário foi enviado com sucesso!</span>`
+        } else if(horaAtual <= 12) {
+            horaAtual = 'Bom dia!'
+            resultado.innerHTML = `<span style="color: green;">${horaAtual} ${nomePessoa}, seu formulário foi enviado com sucesso!</span>`
+        } else if(horaAtual <= 18){
+            horaAtual = 'Boa tarde!'
+            resultado.innerHTML = `<span style="color: green;">${horaAtual} ${nomePessoa}, seu formulário foi enviado com sucesso!</span>`
+        } else {
+            horaAtual = 'Boa noite!'
+            resultado.innerHTML = `<span style="color: green;">${horaAtual} ${nomePessoa}, seu formulário foi enviado com sucesso!</span>`
+        }
     }
 }
