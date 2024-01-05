@@ -39,7 +39,7 @@ hr.cabecalho{
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.384);
 }
 main#conteudo-principal{
-    width: 900px;
+    width: 70%;
     margin: auto;
     margin-top: 20px;
     padding: 8px;
@@ -68,9 +68,13 @@ input:focus{
     outline: none;
     background-color: #d6d6d6;
 }
+.input-50{
+    width: 87%;
+}
 .grupo-input{
     display: flex;
     justify-content: space-between;
+    border: 1px solid red;
 }
 .grupo-input-b{
     display: flex;
@@ -83,6 +87,10 @@ input:focus{
     display: flex;
     align-items: center;
     gap: 25px;
+}
+.input-item{
+    width: 99%;
+    border: 1px solid blue;
 }
 .input-item-genero{
     display: flex;
