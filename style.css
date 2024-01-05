@@ -72,6 +72,9 @@ input:focus{
 .input-50{
     width: 88%;
 }
+.input-30{
+    width: 85%; 
+}
 .grupo-input{
     display: flex;
     justify-content: space-between;

@@ -18,7 +18,7 @@ function verificarCampos() {
     }
 }
 function formatarTelefone(input) {
-    var numeroTelefone = input.value.replace(/\D/g, '');//'input.value' obtém o valor atual do campo de entrada, '.replace('/\D/g')' usa uma expressão regular para substituir todos os caracteres não numéricos ('\D') por uma string vazia (' ').
+    var numeroTelefone = input.value.replace(/\D/g,'');//'input.value' obtém o valor atual do campo de entrada, '.replace('/\D/g')' usa uma expressão regular para substituir todos os caracteres não numéricos ('\D') por uma string vazia (' ').
     // '\D' corresponde a qualquer caractere não numérico.
     // 'g' indica que a substituição deve ser feita globalmente
 
