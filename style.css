@@ -46,6 +46,7 @@ main#conteudo-principal{
     border-radius: 10px;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
+    font-size: 2vmin;
 }
 legend{
     font-size: 23px;
@@ -69,16 +70,15 @@ input:focus{
     background-color: #d6d6d6;
 }
 .input-50{
-    width: 87%;
+    width: 88%;
 }
 .grupo-input{
     display: flex;
     justify-content: space-between;
-    border: 1px solid red;
 }
 .grupo-input-b{
     display: flex;
-    gap: 150px;
+    gap: 8%;
     margin-bottom: 20px;
 }
 .grupo-input-c{
@@ -88,22 +88,21 @@ input:focus{
     align-items: center;
     gap: 25px;
 }
+.subtitulo{
+    text-wrap: nowrap;
+}
 .input-item{
     width: 99%;
-    border: 1px solid blue;
 }
 .input-item-genero{
     display: flex;
     align-items: center;
 }
 .input-item-genero > label{
-    margin-right: 50px;
+    margin-right: 10px;
 }
 .input-item > label{
     margin-right: 50px;
-}
-.input-item-b{
-    display: inline-block;
 }
 .indice{
     color: rgb(180, 180, 180);
