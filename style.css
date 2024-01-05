@@ -69,12 +69,6 @@ input:focus{
     outline: none;
     background-color: #d6d6d6;
 }
-.input-50{
-    width: 88%;
-}
-.input-30{
-    width: 85%; 
-}
 .grupo-input{
     display: flex;
     justify-content: space-between;
@@ -91,11 +85,27 @@ input:focus{
     align-items: center;
     gap: 25px;
 }
+.grupo-input-tel{
+    display: flex;
+    margin-bottom: 20px;
+}
 .subtitulo{
     text-wrap: nowrap;
 }
+.input-25{
+    width: 100px;
+}
+.input-30{
+    width: 85%; 
+}
+.input-50{
+    width: 88%;
+}
+.input-75{
+    width: 80%;
+}
 .input-item{
-    width: 99%;
+    width: 100%;
 }
 .input-item-genero{
     display: flex;
